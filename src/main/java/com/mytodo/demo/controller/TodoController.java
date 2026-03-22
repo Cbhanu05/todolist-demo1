@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/todos")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000")
 public class TodoController {
 
     private final TodoService service;
