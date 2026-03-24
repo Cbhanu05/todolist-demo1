@@ -44,13 +44,13 @@ public class TodoService {
 
     public TodoResponseDTO update(Long id, TodoRequestDTO request) {
 
-        ToDo existing = repository.findById(id)
+        ToDo todo = repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Todo not found"));
 
-        existing.setTitle(request.getTitle());
-        existing.setCompleted(request.isCompleted());
+        todo.setTitle(request.getTitle());
+        todo.setCompleted(request.isCompleted());
 
-        ToDo updated = repository.save(existing);
+        ToDo updated = repository.save(todo);
 
         return new TodoResponseDTO(
                 updated.getId(),
