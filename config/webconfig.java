@@ -16,6 +16,7 @@ public class WebConfig {
                         .allowedOrigins("https://todolist-frontend-udlt.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
+                        .allowedCredentials(true);
             }
         };
     }
