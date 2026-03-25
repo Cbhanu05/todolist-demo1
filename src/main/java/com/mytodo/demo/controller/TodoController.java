@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "https://todolist-frontend-six-xi.vercel.app")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/todos")
 @RequiredArgsConstructor
