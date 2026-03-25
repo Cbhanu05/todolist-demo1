@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/todos")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://your-frontend.vercel.app")
+@CrossOrigin(origins = "https://todolist-frontend-six-xi.vercel.app")
 public class TodoController {
 
     private final TodoService service;
