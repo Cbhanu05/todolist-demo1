@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @CrossOrigin(origins = {
-    "*"})
+    "https://todolist-frontend-udlt.vercel.app/api/todos"})
 @RestController
 @RequestMapping("/api/todos")
 @RequiredArgsConstructor
